@@ -16,14 +16,14 @@ function findWords() {
 findWords();
 
 
-function replaceEvens(arr){
-    for (let i = arr.length - 1; i >= 0; i--) {
+function replaceEvens(name){
+    for (let i = name.length - 1; i >= 0; i--) {
         if (i % 2 == 0) {
             arr.splice(i, 1, "even index");
         }
     }
     return arr;
 }
-const arr = ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
-const newArr = replaceEvens(arr);
-console.log(newArr)
+const name = ["Max","Baseball","Reboot","Goku","Trucks","Rodger"]
+const newname = replaceEvens(name);
+console.log(newname)
